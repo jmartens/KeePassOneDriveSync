@@ -2,5 +2,6 @@ language: csharp
 solution: KoenZomers.KeePass.OneDriveSync.sln
 
 before_script:
-  - curl --compressed https://downloads.sourceforge.net/project/keepass/KeePass%202.x/2.36/KeePass-2.36.zip
+  - wget https://downloads.sourceforge.net/project/keepass/KeePass%202.x/2.36/KeePass-2.36.zip -O /tmp/KeePass-2.36.zip
+  - unzip -d /tmp/KeePass-2.36.zip
   - ls -la
