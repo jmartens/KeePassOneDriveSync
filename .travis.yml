@@ -3,5 +3,5 @@ solution: KoenZomers.KeePass.OneDriveSync.sln
 
 before_script:
   - wget https://downloads.sourceforge.net/project/keepass/KeePass%202.x/2.36/KeePass-2.36.zip -O /tmp/KeePass-2.36.zip
-  - unzip -d /tmp/KeePass-2.36.zip
+  - unzip /tmp/KeePass-2.36.zip -d .
   - ls -la
