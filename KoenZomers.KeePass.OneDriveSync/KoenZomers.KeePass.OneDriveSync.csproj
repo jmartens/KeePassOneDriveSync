@@ -182,4 +182,11 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Target Name="BeforeResolveReferences">
+  <CreateProperty
+    Value=".;$(AssemblySearchPaths)">
+    <Output TaskParameter="Value"
+      PropertyName="AssemblySearchPaths" />
+</CreateProperty>
+</Target>  
 </Project>
