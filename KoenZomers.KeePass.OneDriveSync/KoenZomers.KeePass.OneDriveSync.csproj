@@ -184,7 +184,7 @@
   -->
   <Target Name="BeforeResolveReferences">
   <CreateProperty
-    Value=".;$(AssemblySearchPaths)">
+    Value="$(SolutionDir);$(AssemblySearchPaths)">
     <Output TaskParameter="Value"
       PropertyName="AssemblySearchPaths" />
 </CreateProperty>
